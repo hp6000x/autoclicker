@@ -1,0 +1,24 @@
+#!/bin/bash
+if [[ ! -z "$1" ]]; then
+	count=$1
+	loop=0
+	if [[ -z "$2" ]]; then
+		delay=0.01
+	else
+		delay=$2
+	fi
+	while [[ $loop -lt $count ]]; do 
+		xdotool keydown shift
+		sleep "$delay"s
+		xdotool keyup shift
+		sleep "$delay"s
+		loop=$((loop+1))
+	done
+else
+	echo "Auto shifter"
+	echo "Usage:"
+	echo "	$0 {count} [delay (defaults to 0.01s)]"
+	echo "eg:"
+	echo "	$0 100 0.1"
+	echo "Will press shift 100 times with a delay of 100 miliseconds between each movement of the button, down or up."
+fi

@@ -1,0 +1,24 @@
+#!/bin/bash
+if [[ ! -z "$1" ]]; then
+	count=$1
+	loop=0
+	if [[ -z "$2" ]]; then
+		delay=0.02
+	else
+		delay=$2
+	fi
+	while [[ $loop -lt $count ]]; do 
+		/usr/bin/xdotool mousedown 1
+		sleep "$delay"s
+		/usr/bin/xdotool mouseup 1
+		sleep "$delay"s
+		loop=$((loop+1))
+	done
+else
+	echo "Auto left-clicker"
+	echo "Usage:"
+	echo "	$0 {count} [delay (defaults to 0.02s)]"
+	echo "eg:"
+	echo "	$0 100 0.01"
+	echo "Will left-click 100 times with a delay of 10 miliseconds between each movement of the button, down or up."
+fi
