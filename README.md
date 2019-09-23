@@ -14,7 +14,7 @@ Only a handful of things:
 
 # How do I use these scripts?
 
-Here's an example of how to use them with Minecraft Gardens of Glass on Ubuntu:
+Here's an example of how to use them with a Minecraft Gardens of Glass modpack that has Tree Growing Simulator, all on Xubuntu:
 
 	1: Open the settings app and go to keyboard settings
 	2: Go to the keyboard shortcuts tab and click on the button labelled "New"
