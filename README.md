@@ -19,11 +19,11 @@ Here's an example of how to use them with a Minecraft Gardens of Glass modpack t
 	1: Open the settings app and go to keyboard settings
 	2: Go to the keyboard shortcuts tab and click on the button labelled "New"
 	3: For the command, enter:
-		/path/to/xdotool rightclick 500
+		/path/to/rightclick 500
 	4: Press the keys you want to trigger the clicker. For the key combination, use something like Shift-Super-J or whatever super-key combinations aren't used. Remember what you picked. "Super" is the windows logo key, btw
 	5: Create another shortcut with the "New" button
 	6: For the command, enter:
-		/path/to/xdotool shifter 500
+		/path/to/shifter 500
 	7: Pick another key combination
 	8: Launch Minecraft
 	9: Go to your Gardens of Glass world, look at the ground, hit your key combination, hold shift and BOOM! Pebbles galore!
